@@ -3,8 +3,10 @@ title: "장고 첫걸음"
 date: 2019-11-06
 categories: django
 ---
+
 서비스하기 전까지는 Linux가 아닌 Windows 또는 Mac 환경에서 작업하는 것이 편하다.
 윈도우에서 편하게 개발하기 위한 Back-End 환경을 조성하는 방법을 포스트한다.
+
 
 ### 개발환경
 OS: Windows 10 <br/>
@@ -14,6 +16,7 @@ Framework: Django
 
 Python과 Pycharm은 설치되어있는 것으로 간주한다.
 
+
 ### Django 프로젝트 생성
 PyCharm 터미널(단축키: Alt + F12)을 띄운 뒤 다음과 같은 명령어로 Django 프로젝트를 생성한다.
 
@@ -21,7 +24,7 @@ PyCharm 터미널(단축키: Alt + F12)을 띄운 뒤 다음과 같은 명령어
 django-admin startproject (프로젝트명)
 ```
 
-![1](/img/1.png)
+![1](/img/django-first/1.png)
 
 최상 루트 폴더 (프로젝트 생성 이름)/: 프로젝트 폴더를 담고 있는 단순한 컨테이너이다. 이 디렉터리의 이름은 장고 어플리케이션에게는 아무 상관이 없으며 어떤 이름으로도 변경 가능하다.
 
@@ -47,6 +50,7 @@ cd (Django 프로젝트 폴더)
 django-admin startapp ratelweb
 ```
 
+
 ### 서버 구동하기
 
 Django 프로젝트 폴더의 manage.py를 이용하여 서버를 구동시킨다.
@@ -57,6 +61,7 @@ python manage.py runserver
 
 실행 후 http://127.0.0.1:8000에 접속해 보면 다음과 같이 Django가 구동 된 화면을 볼 수 있다.
 
-Check out the [github] for more info. 
+
+Check out the [github] for spark-1 other info. 
 
 [github]:   https://github.com/spark-1
