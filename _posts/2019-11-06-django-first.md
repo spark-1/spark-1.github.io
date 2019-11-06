@@ -40,7 +40,9 @@ Django 앱 생성
 여기서 "ratelweb"라는 앱을 생성 했다.
 
 > cd "Django 프로젝트 폴더"
-> django-admin startapp ratelweb
+'''python
+django-admin startapp ratelweb
+'''
 
 서버 구동하기
 
