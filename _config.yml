@@ -107,11 +107,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Sungjun Park"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "I am an **beginner** developer."
+  location         : "Korea, Seoul"
+  email            : "parks8109@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
