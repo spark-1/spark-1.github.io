@@ -6,7 +6,7 @@ categories: django
 서비스하기 전까지는 Linux가 아닌 Windows 또는 Mac 환경에서 작업하는 것이 편하다.
 윈도우에서 편하게 개발하기 위한 Back-End 환경을 조성하는 방법을 포스트한다.
 
-개발환경
+#### 개발환경 <br/>
 OS: Windows 10 <br/>
 Language: Python 3.6 <br/>
 IDE: Pycharm community <br/>
