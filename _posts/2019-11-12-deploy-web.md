@@ -94,13 +94,13 @@ pip install -r (requirments 경로)/requirements.txt
 
 ### 서버 구동하기
 
-Django 프로젝트 폴더의 manage.py를 이용하여 서버를 구동시킨다.
-
+Django 프로젝트 폴더의 manage.py를 이용하여 서버를 구동시킨다. <br/>
+runserver뒤에 0:8000을 꼭 붙여주어야 한다.
 ```python
-python manage.py runserver
+python manage.py runserver 0:8000
 ```
 
-실행 후 <http://127.0.0.1:8000>에 접속해 보면 다음과 같이 Django가 구동 된 화면을 볼 수 있다.
+실행 후 (aws public 주소):8000에 접속해 보면 프로젝트가 올라간것을 확인할 수 있다.
 
 
 Check out the [github] for spark-1 other info. 
