@@ -66,12 +66,29 @@ sudo service --status-all | grep nginx
 위 설정에 따르면, 만약 내 인스턴스의 IP 주소가 13.209.97.110일 때, 사용자가 13.209.97.110:80/site 경로로 인스턴스에 접속하면 인스턴스 내 127.0.0.1:8000에서 실행 중인 장고 프로세스로 요청이 전송되고, 13.209.97.110:80/static로 들어오는 요청은 staticfiles 디렉토리의 절대 경로로 연결된다. 
 
 
-### Django 앱 생성
-
-
+### 프로젝트 가져오고 환경설정 하기
+이제 github에 올린 프로젝트를 가져와보자.
 ```python
-cd (Django 프로젝트 폴더)
-django-admin startapp ratelweb
+git clone https://github.com/(owner 이름)/(레포지토리 이름).git
+```
+프로젝트 폴더로 들어가 해당 프로젝트를 위한 파이썬 가상환경을 만들고 가상환경을 실행해보자.
+```python
+cd (생성된 프로젝트)
+virtualenv venv
+source venv/bin/activate
+```
+쉘 왼쪽에 (venv)가 생기면 성공이다. <br/>
+가상환경을 나가고 싶으면 간단히 deactivate라고 명령하면 된다. <br/>
+
+잠시 로컬 개발 환경으로 돌아가보자 <br/>
+다음 명령어를 통해 설치한 모듈 목록을 requirements.txt에 저장해 둘 수 있다.
+```python
+pip freeze > (requirments 경로)/requirements.txt
+```
+다시 배포환경으로 돌아온다. <br/>
+이제 내가 사용하고자 하는 모듈을 가상환경에 맘대로 설치하면 된다. <br/>
+```python
+pip install -r (requirments 경로)/requirements.txt
 ```
 
 
