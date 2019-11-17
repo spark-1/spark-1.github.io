@@ -45,9 +45,9 @@ Django 프로젝트 폴더의 manage.py를 이용하여 서버를 구동시킨�
 ```bash
 $ python manage.py runserver
 ```
-실행 후 <http://127.0.0.1:8000>에 접속해 보면 다음과 같이 Django가 구동 된 화면을 볼 수 있다.
+실행 후 <http://127.0.0.1:8000>에 접속해 보면 다음과 같이 Django가 구동 된 화면을 볼 수 있다. <br>
 <br>
 
-Check out the [github] for spark other info. 
+**Check out the [github] for spark other info.** 
 
 [github]:   https://github.com/spark-1
