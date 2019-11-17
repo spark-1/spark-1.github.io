@@ -18,11 +18,9 @@ Python과 Pycharm은 설치되어있는 것으로 간주한다.
 
 ### Django 프로젝트 생성
 PyCharm 터미널(단축키: Alt + F12)을 띄운 뒤 다음과 같은 명령어로 Django 프로젝트를 생성한다.
-
 ```bash
-django-admin startproject (프로젝트명)
+$ django-admin startproject (프로젝트명)
 ```
-
 ![1](/img/django-first/1.png)
 
 * 최상 루트 폴더 (프로젝트 생성 이름)/: 프로젝트 폴더를 담고 있는 단순한 컨테이너이다. 이 디렉터리의 이름은 장고 어플리케이션에게는 아무 상관이 없으며 어떤 이름으로도 변경 가능하다.
@@ -41,22 +39,18 @@ django-admin startproject (프로젝트명)
 
 
 ### Django 앱 생성
-
 여기서 "ratelweb"라는 앱을 생성 했다.
 ```bash
-cd (Django 프로젝트 폴더)
-django-admin startapp ratelweb
+$ cd (Django 프로젝트 폴더)
+$ django-admin startapp ratelweb
 ```
 
 
 ### 서버 구동하기
-
 Django 프로젝트 폴더의 manage.py를 이용하여 서버를 구동시킨다.
-
-```python
-python manage.py runserver
+```bash
+$ python manage.py runserver
 ```
-
 실행 후 <http://127.0.0.1:8000>에 접속해 보면 다음과 같이 Django가 구동 된 화면을 볼 수 있다.
 
 
