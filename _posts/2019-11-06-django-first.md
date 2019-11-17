@@ -38,6 +38,7 @@ $ django-admin startproject (프로젝트명)
 * mysite/wsgi.py: WSGI 프로토콜을 사용하는 웹서버가 프로젝트의 페이지를 보여주기 위하여 가장 먼저 사용하는 파일이다.
 <br>
 <br>
+
 ### Django 앱 생성
 여기서 "ratelweb"라는 앱을 생성 했다.
 ```bash
@@ -46,6 +47,7 @@ $ django-admin startapp ratelweb
 ```
 <br>
 <br>
+
 ### 서버 구동하기
 Django 프로젝트 폴더의 manage.py를 이용하여 서버를 구동시킨다.
 ```bash
