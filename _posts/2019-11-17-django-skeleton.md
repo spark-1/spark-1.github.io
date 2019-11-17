@@ -24,7 +24,7 @@ Ratel/           # 파이참 프로젝트 명
 * wsgi.py 는 당신의 장고 어플리케이션이 웹서버와 연결 및 소통하는 것을 돕습니다. 당신은 이것을 표준 형식(boilerplate)으로 다뤄도 무방합니다. <br/>
 * manage.py 는 어플리케이션을 생성하고, 데이터베이스와 작업하고, 그리고 개발 웹 서버를 시작하기 위해 사용됩니다. 
 
-**주의: 사진속에 있는 url mappings, templates, static files과 연관된 파일은 자동 생성해주지 않으므로 따로 생성해줘야 한다.
+**주의: 사진속에 있는 url mappings, templates, static files과 연관된 파일은 자동 생성해주지 않으므로 따로 생성해줘야 한다.**
 
 
 ### Django 프로젝트 생성
