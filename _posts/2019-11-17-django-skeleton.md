@@ -6,6 +6,7 @@ categories: django
 [장고의 첫걸음]을 끝냈다면 웹사이트의 뼈대를 생성하는 법을 알아보자. <br>
 
 [장고의 첫걸음]: https://spark-1.github.io/django/django-first/
+<br>
 
 ### Django 프로젝트 구조
 ![1](/img/django-skeleton/1.png)
@@ -16,7 +17,6 @@ Ratel/           # 파이참 프로젝트 명
     ratelweb/    # 어플리케이션 폴더 (created using manage.py)
     manage.py    # 장고 툴을 실행시키기 위한 스크립트 (created using django-admin)
 ```
-
 * \_\_init__.py 는 빈 파일입니다. 이 파일은 Python에게 이 디렉토리를 하나의 Python 패키지로 다루도록 지시합니다. <br><br>
 * settings.py 는 웹사이트의 모든 설정을 포함하고 있습니다. 이 곳에는 우리가 만드는 어떤 application이라도 등록이 되는 곳이며,  static files의 위치, database 세부 설정 등이 들어갑니다. <br><br>
 * urls.py 는 사이트의 url - view의 연결을 지정해줍니다. 여기에는 모든 url 매핑 코드가 포함될 수 있지만, 특정한 어플리케이션에 매핑의 일부를 할당해주는 것이 일반적입니다. <br><br>
