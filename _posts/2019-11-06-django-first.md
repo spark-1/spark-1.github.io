@@ -13,8 +13,8 @@ Language: Python 3.6 <br/>
 IDE: Pycharm community <br/>
 Framework: Django
 
-Python과 Pycharm은 설치되어있는 것으로 간주한다.
-
+**Python과 Pycharm은 설치되어있는 것으로 간주한다.**
+<br/>
 
 ### Django 프로젝트 생성
 PyCharm 터미널(단축키: Alt + F12)을 띄운 뒤 다음과 같은 명령어로 Django 프로젝트를 생성한다.
