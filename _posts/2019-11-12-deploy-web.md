@@ -1,7 +1,7 @@
 ---
 title: "웹 배포하기"
 date: 2019-11-12
-categories: django, server
+categories: django server
 ---
 
 우리는 프로젝트 테스트를 위해 runserver를 사용해왔다. 실제로 runserver는 장고에서 제공하는 테스트용 웹서버이다. 하지만 만약 프로젝트를 고객에게 상용화할 때는 처리 능력이나 보안 문제 때문에 Apache나 Nginx 등의 상용 웹 서버를 사용해야 한다. Nginx와 WSGI 미들웨어 Gunicorn을 사용해 프로젝트를 AWS 인스턴스에 배포하는 방법에 대해 알아볼 것이다.
