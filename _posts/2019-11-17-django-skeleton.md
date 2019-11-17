@@ -4,12 +4,15 @@ date: 2019-11-17
 categories: django
 ---
 [장고의 첫걸음]을 끝냈다면 웹사이트의 뼈대를 생성하는 법을 알아보자.
+
 [장고의 첫걸음]: https://spark-1.github.io/django/django-first/
 
 ### Django 프로젝트 구조
 ![1](/img/django-skeleton/1.png)
 
-Python과 Pycharm은 설치되어있는 것으로 간주한다.
+```text
+django-admin startproject (프로젝트명)
+```
 
 
 ### Django 프로젝트 생성
