@@ -9,7 +9,6 @@ categories: django
 
 ### Django 프로젝트 구조
 ![1](/img/django-skeleton/1.png)
-
 ```
 Ratel/           # 파이참 프로젝트 명
   ratel/         # 웹사이트 폴더 (created using django-admin)
