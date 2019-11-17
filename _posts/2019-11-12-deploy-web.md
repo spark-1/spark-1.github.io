@@ -54,11 +54,11 @@ server {
 ```
 그 뒤 다음 명령어로 Nginx를 재시작하면 설정이 적용된다. <br>
 ```bash
-$ sudo service nginx restart
+sudo service nginx restart
 ```
 다음 명령어를 통해 nginx가 현재 실행되고 있는지 확인할 수 있다. <br>
 ```bash
-$ sudo service --status-all | grep nginx
+$sudo service --status-all | grep nginx
 ```
 또한 크롬 등의 브라우저를 열어 인스턴스 주소로 접속 시 다음과 같은 화면이 나타나면 Nginx 서버가 정상적으로 작동된다는 의미이다. <br>
 이제 인스턴스 시작 시 자동으로 Nginx 웹 서버가 실행되어, 80번 포트에서 요청을 기다리는 상태가 된다. <br>
