@@ -29,7 +29,7 @@ Ratel/           # 파이참 프로젝트 명
 어플리케이션을 생성하였으면 프로젝트에 등록해야합니다. <br>
 어플리케이션들은 프로젝트 설정 안 INSTALLED_APPS 리스트에 추가함으로써 등록 할 수 있습니다. <br>
 등록하면 실행될 때 프로젝트에 포함시키게 됩니다. <br>
-'''python
+```python
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'catalog.apps.CatalogConfig', 
 ]
-'''
+```
 
 
 
