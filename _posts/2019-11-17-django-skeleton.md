@@ -41,15 +41,25 @@ INSTALLED_APPS = [
 ]
 ```
 새로운 행은 어플리케이션 구성 객체(application configuration object) (RatelConfig)를 지정하게 됩니다. <br>
-이것은 어플리케이션을 생성할 때 `/ratel/ratelweb/apps.py` 안에 생성됩니다.
+이것은 어플리케이션을 생성할 때 `/ratel/ratelweb/apps.py` 안에 생성됩니다. <br>
+<br>
 
+### 프로젝트의 다른 설정
+**settings.py** 에서 다른 설정들을 확인할 수 있습니다. <br>
+Database 관련 설정 <br>
+```python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+```
+* SECRET_KEY. 이것은 장고의 웹사이트 보안 전략의 일부로 사용되는 비밀 키 입니다. 만약 이 코드를 개발 과정에서 보호하지 않는다면 제품화(production) 과정에서 다른 코드(아마 환경 변수나 파일에서 읽어오는)를 사용해야 할 것입니다. <br>
+* DEBUG. 이것은 에러가 발생했을 때 HTTP 상태 코드 응답 대신 디버깅 로그가 표시되게 합니다. 디버깅 정보는 공격자에게 유용하기 때문에 제품화된(production) 환경에서는 False 로 설정해야 합니다. 하지만, 지금은 True로 설정합시다. <br>
+<br>
 
-
-### Database 
-
-
-
-### 서버 구동하기
+### URL 매퍼 연결하기
 
 
 
