@@ -3,7 +3,7 @@ title: "장고 뼈대 만들기"
 date: 2019-11-17
 categories: django
 ---
-[장고의 첫걸음]을 끝냈다면 웹사이트의 뼈대를 생성하는 법을 알아보자. <br>
+[장고의 첫걸음]을 끝냈다면 웹사이트의 뼈대를 생성하는 법을 알아봅시다. <br>
 
 [장고의 첫걸음]: https://spark-1.github.io/django/django-first/
 <br>
@@ -22,12 +22,24 @@ Ratel/           # 파이참 프로젝트 명
 * urls.py 는 사이트의 url - view의 연결을 지정해줍니다. 여기에는 모든 url 매핑 코드가 포함될 수 있지만, 특정한 어플리케이션에 매핑의 일부를 할당해주는 것이 일반적입니다. <br><br>
 * wsgi.py 는 당신의 장고 어플리케이션이 웹서버와 연결 및 소통하는 것을 돕습니다. 당신은 이것을 표준 형식(boilerplate)으로 다뤄도 무방합니다. <br><br>
 * manage.py 는 어플리케이션을 생성하고, 데이터베이스와 작업하고, 그리고 개발 웹 서버를 시작하기 위해 사용됩니다. <br><br>
-**주의: 사진속에 있는 url mappings(ratelweb/urls.py), templates(ratelweb/templates/), static files(ratelweb/static/)과 연관된 파일은 자동 생성해주지 않으므로 따로 생성해줘야 한다.** <br>
+**주의: 사진속에 있는 url mappings(ratelweb/urls.py), templates(ratelweb/templates/), static files(ratelweb/static/)과 연관된 파일은 자동 생성해주지 않으므로 따로 생성해줘야 합니다.** <br>
 <br>
 
-### Django 프로젝트 생성
-
-
+### application 등록하기
+어플리케이션을 생성하였으면 프로젝트에 등록해야합니다. <br>
+어플리케이션들은 프로젝트 설정 안 INSTALLED_APPS 리스트에 추가함으로써 등록 할 수 있습니다. <br>
+등록하면 실행될 때 프로젝트에 포함시키게 됩니다. <br>
+'''python
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'catalog.apps.CatalogConfig', 
+]
+'''
 
 
 
