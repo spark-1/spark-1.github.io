@@ -42,7 +42,7 @@ server {
         location /static/ { 
                 alias /home/ubuntu/.../staticfiles/; 
         } 
-        location /site { 
+        location / { 
                 proxy_pass http://127.0.0.1:8000; 
                 proxy_http_version 1.1; 
                 proxy_set_header Upgrade $http_upgrade;
@@ -97,10 +97,22 @@ $ pip install -r (requirments 경로)/requirements.txt
 ### 서버 구동하기
 Django 프로젝트 폴더의 manage.py를 이용하여 서버를 구동시킨다. <br>
 runserver뒤에 0:8000을 꼭 붙여주어야 한다. <br>
+127.0.0.1의 로컬이 아닌 0.0.0.0 이나 0은 어디서든 들어올 수 있게 한다는 뜻이다. <br>
 ```bash
 $ python manage.py runserver 0:8000
 ```
 실행 후 (aws public 주소):8000에 접속해 보면 프로젝트가 올라간것을 확인할 수 있다. <br>
+장고에서 배포시에는 runserver로 앱서버를 바로 실행시키는것을 권장하지 않고 웹서버인 nginx나 apache를 통해 앱서버에 요청을 보내는것을 권장한다. <br>
+이때 웹서버와 앱서버간의 요청에는 http와 같은 일종의 인터페이스가 필요한데, python 에서는 wsgi 라는 인터페이스를 사용한다고 한다. <br>
+설치와 실행방법은 간단하다. <br>
+**설치**
+```bash
+$ sudo apt-get install gunicorn
+```
+**실행**
+```bash
+$ gunicorn ratel.wsgi --bind 0:8000
+```
 <br>
 
 **Check out the [github] for spark-1 other info.** 
